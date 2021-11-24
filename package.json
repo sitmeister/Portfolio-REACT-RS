@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-react-rs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitmeister/Portfolio-REACT-RS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sitmeister/Portfolio-REACT-RS/issues"
+  },
+  "homepage": "https://sitmeister.github.io/Portfolio-REACT-RS",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
