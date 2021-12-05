@@ -1,6 +1,7 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Button from "@mui/material/Button"
 
 function Footer() {
   const links = {
@@ -21,7 +22,7 @@ function Footer() {
     },
     list: {
         listStyleType: "none",
-
+        display: "flex"
       },
   };
 
@@ -29,29 +30,27 @@ function Footer() {
     <div style={styles.Container}>
       <ul style={styles.list}>
         <li>
-          <a style={styles.links} href="#">mrronsit@gmail.com</a>
+          <Button style={styles.links} href="#">mrronsit@gmail.com</Button>
         </li>
         <li>
-          <a
+          <Button
             href={links.github}
             without
             rel="noopener noreferrer"
             target="_blank"
-            className="animate__animated animate__bounce"
           >
             <GitHubIcon color="action" />
-          </a>
+          </Button>
         </li>
         <li>
-          <a
+          <Button
             href={links.linkedin}
             without
             rel="noopener noreferrer"
             target="_blank"
-            className="animate__animated animate__bounce"
           >
             <LinkedInIcon color="action" />
-          </a>
+          </Button>
         </li>
       </ul>
     </div>
